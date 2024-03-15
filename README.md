@@ -64,3 +64,4 @@
 * functions
 * can be defined using the "def" keyword followed by the function name and arguments in parentheses
 * can take one or more arguments, and they may or may not return a value
+* arguments must be the same number as
