@@ -53,15 +53,53 @@
        * With the while loop  can execute a set of statements as long as a condition is true
        *to increment index, or else the loop will continue forever.
        *With the break statement  can stop the loop even if the while condition is true
+       * Stop the repetion when the loop reaches the specified value
        *With the continue statement can stop the current iteration, and continue with the next
 * for loop
      * for loop is used for iterating over a sequence
      * does not require an indexing variable to set beforehand
      * To loop through a set of code a specified number of times, can use the range() function,
      * The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
-
-
+     * it is possible to specify the starting value by adding a parameter range(2,6)which means values from 2 to 6 (but not adding 6)
+     * it is possible to specify the increment value by adding a third parameter range(2,30,3)
+     * the else  in for loop specifies a block of code to be executes when the loop is finished
+     * nested loop is a loop inside a loop
+     * the inner loop will be executes done-time for each iteration of the outer loop 
 * functions
 * can be defined using the "def" keyword followed by the function name and arguments in parentheses
 * can take one or more arguments, and they may or may not return a value
-* arguments must be the same number as
+* Functions can take one or more arguments, and they may or may not return a value.
+* the print function is an example of a function that does not return anything, but rather prints output to the console.
+* To call a function, use the function name followed by parenthesis.
+* def my_function():
+       print("Hello from a function")
+ my_function()
+*Information can be passed into functions as arguments.
+*Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+*By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less
+*If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.
+*This way the function will receive a tuple of arguments, and can access the items accordingly
+* if you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.This way the function will receive a dictionary of arguments, and can access the items accordingly
+* You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.
+E.g. if you send a List as an argument, it will still be a List when it reaches the function
+
+* Classes and objects
+*  When we define a class, we use an uppercase letter for the class name, and we start defining all the functions and attributes inside the class definition.
+*  A Class is like an object constructor, or a "blueprint" for creating objects.
+*  To create a class, use the keyword class
+*  Now we can use the class named MyClass to create objects
+*  To understand the meaning of classes we have to understand the built-in __init__() function.
+*  All classes have a function called __init__(), which is always executed when the class is being initiated.
+* Use the __init__() function to assign values to object properties, or other operations that are necessary to do when the object is being created
+* usually begin by creating a special function called the initialization function, or "init" function, which gets called every time an instance of the class is created. The init function takes in a variable called "self,"
+  *can access any of the attributes or functions in the class using the "self" variable.
+  * These class instances are called objects, and the variables inside these classes are called attributes, while the functions are called methods. 
+ *The __init__() function is called automatically every time the class is being used to create a new object.
+*The __str__() function controls what should be returned when the class object is represented as a string.
+*
+*IfThe self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
+
+It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class the __str__() function is not set, the string representation of the object is returned
+
+
+
