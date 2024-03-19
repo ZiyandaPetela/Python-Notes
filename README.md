@@ -98,12 +98,10 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
 *The __str__() function controls what should be returned when the class object is represented as a string.
 *It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class the __str__() function is not set, the string representation of the object is returned
 *IfThe self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
-
-
-      * BASIC DATA TYPES
-* converting from one type to another, such as float to int, we call it casting
-*Python doesn't round when casting floats to ints, it merely removes the decimal part.
-*To round a float to the nearest int, we can use the round function.
+* BASIC DATA TYPES
+ * converting from one type to another, such as float to int, we call it casting
+* Python doesn't round when casting floats to ints, it merely removes the decimal part.
+* To round a float to the nearest int, we can use the round function.
 *can also specify how many decimal places to round to, such as rounding 4.67 to 5. 
 *Floats are stored as binary ones and zeros in memory, and due to limited memory
 *if you pass a number as a string, the int class will convert it to an integer. For example, "100" becomes the integer 100.
