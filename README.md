@@ -102,14 +102,16 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
  * converting from one type to another, such as float to int, we call it casting
 * Python doesn't round when casting floats to ints, it merely removes the decimal part.
 * To round a float to the nearest int, we can use the round function.
-*can also specify how many decimal places to round to, such as rounding 4.67 to 5. 
-*Floats are stored as binary ones and zeros in memory, and due to limited memory
-*if you pass a number as a string, the int class will convert it to an integer. For example, "100" becomes the integer 100.
-*To use the decimal module, you need to import the decimal class and the getcontext function at the top of your code. The getcontext function returns a context object that holds global settings for using the decimal class
-*Python easily casts integers to booleans - 1 is true and 0 is false. In fact, anything except 0 is true. So even -1 and imaginary 1 are true, but float 0 and imaginary 0 are false.
-*Boolean true is true, of course, and anything other than an empty string is also true. So even the string "false" is true. The only false string is an empty one, but be careful not to accidentally have a space in there
-*Python has numerous tools to analyze and construct strings, and one of the most useful is slicing. Slicing refers to taking a portion of a string and returning it
-*Python has a few ways to create strings, including string concatenation and f-strings. F-strings allow us to insert variables or expressions inside curly braces in a string. We can also do rounding and number formatting with f-strings
+* can also specify how many decimal places to round to, such as rounding 4.67 to 5. 
+* Floats are stored as binary ones and zeros in memory, and due to limited memory
+* if you pass a number as a string, the int class will convert it to an integer. For example, "100" becomes the integer 100.
+* To use the decimal module, you need to import the decimal class and the getcontext function at the top of your code. The getcontext function returns a context object that holds global settings for using the 
+ decimal class
+* Python easily casts integers to booleans - 1 is true and 0 is false. In fact, anything except 0 is true. So even -1 and imaginary 1 are true, but float 0 and imaginary 0 are false.
+* Boolean true is true, of course, and anything other than an empty string is also true. So even the string "false" is true. The only false string is an empty one, but be careful not to accidentally have a space 
+ in there
+* Python has numerous tools to analyze and construct strings, and one of the most useful is slicing. Slicing refers to taking a portion of a string and returning it
+* Python has a few ways to create strings, including string concatenation and f-strings. F-strings allow us to insert variables or expressions inside curly braces in a string. We can also do rounding and number formatting with f-strings
 * Python has a handy feature for creating multi-line strings by using triple quotes. If we need to include literal triple quotes in the string, we can escape them with a backslash
 * When computers store information, it's done as ones and zeros.
 * Bytes objects are immutable, like tuples, but you can use a byte array if you need to modify the data. You can treat a byte array like a string and modify specific byte values using slice notation.
