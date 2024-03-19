@@ -100,7 +100,7 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
 *IfThe self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
 
 
-* BASIC DATA TYPES
+      * BASIC DATA TYPES
 * converting from one type to another, such as float to int, we call it casting
 *Python doesn't round when casting floats to ints, it merely removes the decimal part.
 *To round a float to the nearest int, we can use the round function.
