@@ -141,6 +141,18 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
 </details>
 <details>
      <summary>Week-2</summary>
-    
+*fUNCTIONS
+   * Functions are composed of a name and parameters, which are denoted by the def statement. 
+   * to create a function, let's call it performOperation and include num1, num2, and operation as parameters. 
+   * If the operation is "sum," the function should return the sum of num1 and num2, and if it is "multiply," the function should return the product of num1 and num2.
+   * If our function has a lot of these optional keyword parameters, it can become confusing to determine their order. Therefore, it may be more clear and easier to read to explicitly state "operation equals 
+      multiply". 
+  *  When calling the function, pass in the message before or after the operation, as long as we specify which argument is which by using a comma to separate them.
+  *  the order of the first two arguments is important and cannot be changed. However, after these mandatory arguments, the keyword arguments can be in any order. 
+  *  to allow users to pass in any number of variables, use the asterisk symbol before the argument name to create a pointer to the inputted variables. 
+  *  **kwargs- In order to handle keyword arguments, a method called kwargs can be used. Kwags is short for keyword arguments. 
+  
+
+
 </details>
-Celiwe@M1
+
