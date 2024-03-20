@@ -1,4 +1,5 @@
-# Python-week-1
+<details>
+<summary>Python-week-1</summary>
 * today was my first day since I was at the hospital the last two days. I learnt new things like installing all the necessary apps for my coding environment like python, jupiter and the text editor visual studio codde, I also created github.
 * I also learnt introduction to python,why python is important and syntax that python uses which is different from other different languages.
 * python variables, how to declare the variables and assign variables to them
@@ -136,6 +137,9 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
 * can also access the keys and values of a dictionary using the .keys() and .values() methods, respectively.
 * Using a list comprehension, we can multiply each item in the list by two, like this: two times item for item in my list. This is really cool, right? The list comprehension is enclosed in square brackets, and the syntax is similar to that of a for loop.
 * A list comprehension allows you to create a for loop in one line while also returning a copy of the list you're iterating over. It also enables you to filter or apply functions to every item in a list.
-
-
+</details>
+<details>
+     <summary>Week-2</summary>
+     ## Day-1
+</details>
 
