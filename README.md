@@ -157,7 +157,10 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
    * are the variable names that are only accessible locally within the function
    * In Python, there are two types of variables: local variables, which are defined inside the function, and global variables, which are defined outside the function in the main code block.
    * globals()
-   * 
+   * Variables that are created outside of a function (as in all of the examples above) are known as global variables.
+   * can be used by everyone, both inside of functions and outside.
+   * if you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function.
+   * The global variable with the same name will remain as it was, global and with the original value.
   
 
 
