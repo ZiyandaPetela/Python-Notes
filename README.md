@@ -118,8 +118,24 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
 
 
 * Basic Data Structures
-* 
-
+* licing can be used to extract a range of values from a list or string, and you can also add a third value to control the step size.
+* Range function can be used to generate longer lists, which can also be sliced.
+* Negative values can be used to step backward through the list. All of these operations allow for the extraction of data from lists or strings one value at a time.
+*To add an item to the end of a list, we can use the append() method. For example, if we have a list myList with the values 1, 2, 3, 4, we can append the value 5 to it by typing myList.append(5) and then printing myList
+* we want to insert an item at a specific position in the list, we can use the insert() method. For instance, if we want to insert the value 10 at position 3 in myList, we can type myList.insert(3, 10) and then print myList.
+* There are two ways to remove items from a list. The first method is called remove(), which removes an item based on its value, not its index.
+* For instance, if we want to remove the value 5 from myList, we can type myList.remove(5) and then print myList. However, if we try to remove a value that isn't in the list, we will get an error.
+* The second method to remove items from a list is pop().
+*  This method removes and returns the item at the end of the list. For example, if we type myList.pop() and then print myList, the last item will be removed from myList.
+* can also use a loop with pop() to remove all items from the list. For example, we can use a while loop with the condition while len(myList) > 0: and inside the loop, we can print myList.pop(). After the loop, the list will be empty
+* its are not ordered lists but rather collections of elements, so their order is randomized. You can't access elements in a set using an index or slicing syntax. However, you can add elements to a set using the add() function and remove elements using the discard() function.
+* You can also check if an element is in a set using the membership operator (in) and find the length of a set using the length() function. Lastly, sets have a pop() function that removes and returns an arbitrary element from the set.
+* To access a specific key-value pair in the dictionary, you can simply type the name of the dictionary followed by the key in square brackets.
+* To add a new key-value pair, you can use a similar syntax with the assignment operator.
+* If you want to update an existing key-value pair, simply access it and reassign it a new value.
+* can also access the keys and values of a dictionary using the .keys() and .values() methods, respectively.
+* Using a list comprehension, we can multiply each item in the list by two, like this: two times item for item in my list. This is really cool, right? The list comprehension is enclosed in square brackets, and the syntax is similar to that of a for loop.
+* A list comprehension allows you to create a for loop in one line while also returning a copy of the list you're iterating over. It also enables you to filter or apply functions to every item in a list.
 
 
 
