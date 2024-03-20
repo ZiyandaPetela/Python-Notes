@@ -1,6 +1,6 @@
 <details>
 <summary>Python-week-1</summary>
-* today was my first day since I was at the hospital the last two days. I learnt new things like installing all the necessary apps for my coding environment like python, jupiter and the text editor visual studio codde, I also created github.
+     * today was my first day since I was at the hospital the last two days. I learnt new things like installing all the necessary apps for my coding environment like python, jupiter and the text editor visual studio codde, I also created github.
 * I also learnt introduction to python,why python is important and syntax that python uses which is different from other different languages.
 * python variables, how to declare the variables and assign variables to them
 * why comments are important and how to use them.
@@ -140,6 +140,6 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
 </details>
 <details>
      <summary>Week-2</summary>
-     ## Day-1
+    
 </details>
 
