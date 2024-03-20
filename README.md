@@ -1,12 +1,13 @@
 <details>
 <summary>Python-week-1</summary>
-     * today was my first day since I was at the hospital the last two days. I learnt new things like installing all the necessary apps for my coding environment like python, jupiter and the text editor visual studio codde, I also created github.
-* I also learnt introduction to python,why python is important and syntax that python uses which is different from other different languages.
-* python variables, how to declare the variables and assign variables to them
-* why comments are important and how to use them.
-* the differre between global and local variables.
-* Different python data types that are available like float,int string, boolean etc
-* Data structures that we have lists and how is it different from tuples and dictionery's
+     * today was my first day since I was at the hospital the last two days. I learnt new things like installing all the necessary apps for my coding environment like python, jupiter and the text editor visual 
+    studio codde, I also created github.
+    * I also learnt introduction to python,why python is important and syntax that python uses which is different from other different languages.
+    * python variables, how to declare the variables and assign variables to them
+    * why comments are important and how to use them.
+    * the differre between global and local variables.
+    * Different python data types that are available like float,int string, boolean etc
+    * Data structures that we have lists and how is it different from tuples and dictionery's
 * list
       * List is a collection which is ordered and changeable. Allows duplicate members
       * List items are ordered, changeable, and allow duplicate values.
@@ -142,4 +143,4 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
      <summary>Week-2</summary>
     
 </details>
-
+Celiwe@M1
