@@ -142,6 +142,7 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
 <details>
      <summary>Week-2</summary>
 *fUNCTIONS
+ 
    * Functions are composed of a name and parameters, which are denoted by the def statement. 
    * to create a function, let's call it performOperation and include num1, num2, and operation as parameters. 
    * If the operation is "sum," the function should return the sum of num1 and num2, and if it is "multiply," the function should return the product of num1 and num2.
