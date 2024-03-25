@@ -167,6 +167,6 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
    * The global variable with the same name will remain as it was, global and with the original value.
   
  Python, instance attributes are variables that are bound to a specific instance of a class. They are unique to each instance and are accessed using the instance name followed by a dot and then the attribute name. Instance attributes are defined within the methods of a class, typically within the __init__ method, but they can also be created dynamically during runtime.
-
+a static attribute (also known as a class attribute) is a variable that is associated with a class rather than with instances of that class. Static attributes are defined outside of any method within a class and are shared among all instances of the class. They are accessed using the class name itself, followed by a dot and then the attribute name.
 </details>
 
