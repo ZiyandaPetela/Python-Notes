@@ -165,10 +165,16 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
    * can be used by everyone, both inside of functions and outside.
    * if you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function.
    * The global variable with the same name will remain as it was, global and with the original value.
-  
- Python, instance attributes are variables that are bound to a specific instance of a class. They are unique to each instance and are accessed using the instance name followed by a dot and then the attribute name. Instance attributes are defined within the methods of a class, typically within the __init__ method, but they can also be created dynamically during runtime.
-a static attribute (also known as a class attribute) is a variable that is associated with a class rather than with instances of that class. Static attributes are defined outside of any method within a class and are shared among all instances of the class. They are accessed using the class name itself, followed by a dot and then the attribute name.
-The clean text method is a static method because it does not belong to any particular class instance, whereas add text is an instance method that belongs to a particular instance of the class. Static variables like replace puncs can also be added to control which punctuations get replaced. Use either the class name or the class instance to refer to static variables, but cannot be done with instance methods.
-By adding the @staticmethod decorator to the function definition, it explicitly states in Python that the function is a static method and should not have "self" passed in as an argument. This allows us to use the function without creating an instance of the class. 
+   * Python, instance attributes are variables that are bound to a specific instance of a class. 
+   * They are unique to each instance and are accessed using the instance name followed by a dot and then the attribute name.
+   * Instance attributes are defined within the methods of a class, typically within the __init__ method, but they can also be created dynamically during runtime.
+   * a static attribute (also known as a class attribute) is a variable that is associated with a class rather than with instances of that class.
+   * Static attributes are defined outside of any method within a class and are shared among all instances of the class. 
+   * They are accessed using the class name itself, followed by a dot and then the attribute name.
+   * The clean text method is a static method because it does not belong to any particular class instance, whereas add text is an instance method that belongs to a particular instance of the class.
+   * Static variables like replace puncs can also be added to control which punctuations get replaced. Use either the class name or the class instance to refer to static variables, but cannot be done with instance 
+     methods.
+   * By adding the @staticmethod decorator to the function definition, it explicitly states in Python that the function is a static method and should not have "self" passed in as an argument. 
+   * This allows us to use the function without creating an instance of the class. 
 </details>
 
