@@ -153,9 +153,10 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
   *  to allow users to pass in any number of variables, use the asterisk symbol before the argument name to create a pointer to the inputted variables. 
   *  **kwargs- In order to handle keyword arguments, a method called kwargs can be used. Kwags is short for keyword arguments.
 * Variables and Scope
+   * there are two types of variables: local variables, which are defined inside the function, and global variables, which are defined outside the function in the main code block.
    * locals()
    * are the variable names that are only accessible locally within the function
-   * In Python, there are two types of variables: local variables, which are defined inside the function, and global variables, which are defined outside the function in the main code block.
+   * there are two types of variables: local variables, which are defined inside the function, and global variables, which are defined outside the function in the main code block.
    * globals()
    * Variables that are created outside of a function (as in all of the examples above) are known as global variables.
    * can be used by everyone, both inside of functions and outside.
