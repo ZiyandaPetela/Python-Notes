@@ -166,7 +166,7 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
    * if you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function.
    * The global variable with the same name will remain as it was, global and with the original value.
   
-
+ Python, instance attributes are variables that are bound to a specific instance of a class. They are unique to each instance and are accessed using the instance name followed by a dot and then the attribute name. Instance attributes are defined within the methods of a class, typically within the __init__ method, but they can also be created dynamically during runtime.
 
 </details>
 
