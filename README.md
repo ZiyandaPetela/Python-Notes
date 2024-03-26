@@ -175,6 +175,19 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
    * Static variables like replace puncs can also be added to control which punctuations get replaced. Use either the class name or the class instance to refer to static variables, but cannot be done with instance 
      methods.
    * By adding the @staticmethod decorator to the function definition, it explicitly states in Python that the function is a static method and should not have "self" passed in as an argument. 
-   * This allows us to use the function without creating an instance of the class. 
+   * This allows us to use the function without creating an instance of the class.
+   * Inheritance allows us to define a class that inherits all the methods and properties from another class.
+   * Parent class is the class being inherited from, also called base class.
+   * Child class is the class that inherits from another class, also called derived class.
+   * if the child class defines an attribute or method that is the same as the parent class, the child's version will overwrite the parent's version.
+   *  Extending built-in classes
+   *  list that ensures all appended items are unique, like a set.
+   * Create your own unique list class by extending the list class.
+   *  The unique list class inherits from the list class and we will override the append function.
+   *  the "super" function is used is in the constructor.
+   *  To avoid this, use "super" again and ensure that the parent constructor is called first before adding our new property.
+   *  When this new class is initiated, the new property has been added successfully.
+   *  Although class extensions may seem complicated at first, they are an elegant and powerful tool that can resolve challenging coding issues.\
+   *  
 </details>
 
