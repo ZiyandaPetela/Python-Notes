@@ -206,6 +206,19 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
    * type error by trying to add an int to string.
    * Custom Decorators- Grab all these exception handlings that were done and make a new function called handleException
    * raising exceptions-  Use the handle exception decorator. 
-  
+
+   * Fundamentals of Threads and Processes
+   * multiprocessing allows true parallelism by creating separate processes, each with its own Python interpreter and memory space.
+  *  Each process runs independently, enabling parallel execution of CPU-bound tasks on multi-core CPUs.
+  *  you can achieve parallelism using two main modules: multiprocessing and threading.
+  *   Both modules allow you to run code concurrently, but they have different implementations and use cases.
+  *   threading provides concurrency where multiple threads execute in the same process space, sharing memory.
+  *  threads are lighter weight than processes, making them suitable for I/O-bound tasks such as network operations or file I/O.
+  *  Use multithreading (threading) for I/O-bound tasks where the program spends a lot of time waiting for I/O operations to complete.
+  *  Use multiprocessing (multiprocessing) for CPU-bound tasks where the program needs to perform intensive computations.
+  * Be cautious when using threading for CPU-bound tasks due to the GIL limitation; multiprocessing is generally preferred in such scenarios.
+  * First, import the threading and time modules.
+  * Then, create a function that calculates the square of a number but takes a really long time to do it.
+  * 
 </details>
 
