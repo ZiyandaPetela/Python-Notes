@@ -165,10 +165,47 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
    * can be used by everyone, both inside of functions and outside.
    * if you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function.
    * The global variable with the same name will remain as it was, global and with the original value.
+   * Python, instance attributes are variables that are bound to a specific instance of a class. 
+   * They are unique to each instance and are accessed using the instance name followed by a dot and then the attribute name.
+   * Instance attributes are defined within the methods of a class, typically within the __init__ method, but they can also be created dynamically during runtime.
+   * a static attribute (also known as a class attribute) is a variable that is associated with a class rather than with instances of that class.
+   * Static attributes are defined outside of any method within a class and are shared among all instances of the class. 
+   * They are accessed using the class name itself, followed by a dot and then the attribute name.
+   * The clean text method is a static method because it does not belong to any particular class instance, whereas add text is an instance method that belongs to a particular instance of the class.
+   * Static variables like replace puncs can also be added to control which punctuations get replaced. Use either the class name or the class instance to refer to static variables, but cannot be done with instance 
+     methods.
+   * By adding the @staticmethod decorator to the function definition, it explicitly states in Python that the function is a static method and should not have "self" passed in as an argument. 
+   * This allows us to use the function without creating an instance of the class.
+   * Inheritance allows us to define a class that inherits all the methods and properties from another class.
+   * Parent class is the class being inherited from, also called base class.
+   * Child class is the class that inherits from another class, also called derived class.
+   * if the child class defines an attribute or method that is the same as the parent class, the child's version will overwrite the parent's version.
+   *  Extending built-in classes
+   *  list that ensures all appended items are unique, like a set.
+   * Create your own unique list class by extending the list class.
+   *  The unique list class inherits from the list class and we will override the append function.
+   *  the "super" function is used is in the constructor.
+   *  To avoid this, use "super" again and ensure that the parent constructor is called first before adding our new property.
+   *  When this new class is initiated, the new property has been added successfully.
+   *  Although class extensions may seem complicated at first, they are an elegant and powerful tool that can resolve challenging coding issues.
+   * Handling Errors and Exceptions
+   * problems are referred to as errors, while other times are called exceptions.
+   * errors and exceptions are basically the same thing. All Python errors and exceptions ultimately stem from a class called the base exception.
+   * Use the pass keyword when you do not want to add any other properties or methods to the class.
+   * The __init__() function is called automatically every time the class is being used to create a new object.
+   * Try/Except
+   * The child's __init__() function overrides the inheritance of the parent's __init__() function.
+   * super() function that will make the child class inherit all the methods and properties from its parent
+   * By using the super() function, you do not have to use the name of the parent element, it will automatically inherit the methods and properties from its parent.
+   * Managing and Handling Exceptions
+   * Finally
+   * take the Try / Except block and add a finally to it, this will always execute and gets printed out.
+   * Finally statements can be useful because they will always execute no matter what happens inside this try block.
+   * Even if no exception is raised at all, that still executes.
+   * Catching Exceptions by Type
+   * type error by trying to add an int to string.
+   * Custom Decorators- Grab all these exception handlings that were done and make a new function called handleException
+   * raising exceptions-  Use the handle exception decorator. 
   
- Python, instance attributes are variables that are bound to a specific instance of a class. They are unique to each instance and are accessed using the instance name followed by a dot and then the attribute name. Instance attributes are defined within the methods of a class, typically within the __init__ method, but they can also be created dynamically during runtime.
-a static attribute (also known as a class attribute) is a variable that is associated with a class rather than with instances of that class. Static attributes are defined outside of any method within a class and are shared among all instances of the class. They are accessed using the class name itself, followed by a dot and then the attribute name.
-The clean text method is a static method because it does not belong to any particular class instance, whereas add text is an instance method that belongs to a particular instance of the class. Static variables like replace puncs can also be added to control which punctuations get replaced. Use either the class name or the class instance to refer to static variables, but cannot be done with instance methods.
-By adding the @staticmethod decorator to the function definition, it explicitly states in Python that the function is a static method and should not have "self" passed in as an argument. This allows us to use the function without creating an instance of the class. 
 </details>
 
