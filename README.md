@@ -187,7 +187,25 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
    *  the "super" function is used is in the constructor.
    *  To avoid this, use "super" again and ensure that the parent constructor is called first before adding our new property.
    *  When this new class is initiated, the new property has been added successfully.
-   *  Although class extensions may seem complicated at first, they are an elegant and powerful tool that can resolve challenging coding issues.\
-   *  
+   *  Although class extensions may seem complicated at first, they are an elegant and powerful tool that can resolve challenging coding issues.
+   * Handling Errors and Exceptions
+   * problems are referred to as errors, while other times are called exceptions.
+   * errors and exceptions are basically the same thing. All Python errors and exceptions ultimately stem from a class called the base exception.
+   * Use the pass keyword when you do not want to add any other properties or methods to the class.
+   * The __init__() function is called automatically every time the class is being used to create a new object.
+   * Try/Except
+   * The child's __init__() function overrides the inheritance of the parent's __init__() function.
+   * super() function that will make the child class inherit all the methods and properties from its parent
+   * By using the super() function, you do not have to use the name of the parent element, it will automatically inherit the methods and properties from its parent.
+   * Managing and Handling Exceptions
+   * Finally
+   * take the Try / Except block and add a finally to it, this will always execute and gets printed out.
+   * Finally statements can be useful because they will always execute no matter what happens inside this try block.
+   * Even if no exception is raised at all, that still executes.
+   * Catching Exceptions by Type
+   * type error by trying to add an int to string.
+   * Custom Decorators- Grab all these exception handlings that were done and make a new function called handleException
+   * raising exceptions-  Use the handle exception decorator. 
+  
 </details>
 
