@@ -216,9 +216,25 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
   *  threads are lighter weight than processes, making them suitable for I/O-bound tasks such as network operations or file I/O.
   *  Use multithreading (threading) for I/O-bound tasks where the program spends a lot of time waiting for I/O operations to complete.
   *  Use multiprocessing (multiprocessing) for CPU-bound tasks where the program needs to perform intensive computations.
+  *  he capability of creating and running multiple processes concurrently in order to achieve parallelism and improve performance, particularly on multi-core systems. 
   * Be cautious when using threading for CPU-bound tasks due to the GIL limitation; multiprocessing is generally preferred in such scenarios.
   * First, import the threading and time modules.
   * Then, create a function that calculates the square of a number but takes a really long time to do it.
-  * 
+  * the code inside the if __name__ == "__main__": block is used to prevent the creation of subprocesses on import, which can lead to infinite recursion.
+  * Opening,reading and writing files
+  * reading files
+  * use the built-in open() function.
+  * The open() function returns a file object, which has a read() method for reading the content of the file
+  * If the file is located in a different location, you will have to specify the file path
+  * By default the read() method returns the whole text, but you can also specify how many characters you want to return
+  * It is a good practice to always close the file when you are done with it.
+  * to write to an existing file, you must add a parameter to the open() function:
+  * "a" - Append - will append to the end of the file
+  * "w" - Write - will overwrite any existing content
+  * Appending files in Python is similar to writing files, but you use a different mode when opening the file to specify that you want to append data to it without 
+    overwriting the existing conten
+  * CSV (Comma-Separated Values) files in Python is quite common, especially for tasks involving data manipulation and analysis.
+  * Python provides a built-in module called csv to handle CSV files convenient
+  * Filtering data in CSV files typically involves reading the file, applying some criteria to select specific rows, and then either displaying or saving the filtered data. 
 </details>
 
