@@ -239,4 +239,20 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
 </details>
 <details>
      <summary>Week-3</summary>
+ * Project Planning
+   * User Stories
+      * depict small scenarios from a user's perspective, these stories should emphasize the user's goal and motivation rather than the 
+         application itself
+      * User stories are brief, simple, and informal, perfect for jotting down on index cards.
+      * the format "As a [user/role], I want [goal] so that [reason/benefit]"
+      * when writing user stories, focus on the user's goals and reasons, rather than specific interface details or implementation methods. 
+     *  Use cases typically include a title, an actor (a user or system), and a scenario that describes how a goal is achieved. 
+     *  User stories focus on the who, what, and why of a task or goal, while use cases cover the who, what, and how of achieving that goal.
+     *  Functional requirements describe what the application should or should not do and are written as sentences starting with "the application 
+       must" or "the application shall.
+    *  non-functional requirements describe how the application should accomplish its tasks,They focus on qualities like maintainability, 
+       reliability, and usability.
+    *  Looking at the requirements, use cases, and user stories, identifying nouns helps determine potential objects
+    *Grouping related nouns together, such as content and email, provides a starting point for potential classes. Content, email, and GUI emerge as candidates for classes.
+ 
      </details>
