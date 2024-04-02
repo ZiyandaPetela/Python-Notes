@@ -237,4 +237,6 @@ E.g. if you send a List as an argument, it will still be a List when it reaches 
   * Python provides a built-in module called csv to handle CSV files convenient
   * Filtering data in CSV files typically involves reading the file, applying some criteria to select specific rows, and then either displaying or saving the filtered data. 
 </details>
-
+<details>
+     <summary>Week-3</summary>
+     </details>
