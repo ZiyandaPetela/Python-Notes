@@ -1,0 +1,69 @@
+from tkinter import *
+from tkinter import ttk
+from tkinter import messagebox
+
+root= Tk()
+root.title('Coffee Menu')
+heading_label =Label(root, text="Coffee Menu", font=("Helvetica", 18, "bold"),fg="navy")
+heading_label.pack(pady=20)
+
+
+button_coffe= Button(root,text="COFFEE",padx=40,pady=15)
+button_cappu=Button(root,text="TEA",padx=40,pady=15 )
+button_coffe= Button(root,text="COFFEE",padx=40,pady=15)
+button_tea=Button(root,text="TEA",padx=40,pady=15 )
+
+
+
+def ask_sugar_or_sweetener():
+    # Ask the user if they want sugar or sweetener
+    result = messagebox.askquestion("Sugar or Sweetener", "Do you want sugar or sweetener?")
+    if result == 'yes':
+        # User wants sugar
+        print("You chose sugar.")
+    else:
+        # User wants sweetener
+        print("You chose sweetener.")
+
+
+def submit():
+    # Get the selected option
+    selected_option = option.get()
+    print("Selected option:", selected_option)
+
+
+
+# Create a label for the options
+option_label = Label(root, text="Choose an Coffee of your Choice:")
+option_label.pack(pady=10)
+
+# Define the options
+options = [
+    ("Espresso", "Espresso"),
+    ("Latte", "Latte"),
+    ("Americano", "Americano"),
+    ("Macchiato", "Macchiato"),
+
+]
+
+# Create a variable to store the selected option
+option = StringVar()
+
+# Create Radiobuttons for each option
+for text, value in options:
+    option_button = Radiobutton(root, text=text, variable=option, value=value)
+    option_button.pack(anchor=W)
+
+# Create a button to submit the selection
+submit_button = Button(root, text="Submit", command=submit)
+submit_button.pack(pady=10)
+
+# Start the GUI event loop
+
+
+root.mainloop()
+
+
+
+
+

@@ -1,0 +1,23 @@
+from tkinter import *
+from tkinter import messagebox
+
+root= Tk()
+root.title('Ardaciti Coffe Shop')
+
+heading_label =Label(root, text="Welcome to Ardaciti Coffee Shop", font=("Helvetica", 18, "bold"))
+heading_label.pack(pady=20)
+
+
+
+button_voice=Button(root,text="VOICE COMMAND")
+
+
+button_coffe= Button(root,text="COFFEE",padx=40,pady=15)
+button_tea=Button(root,text="TEA",padx=40,pady=15 )
+button_voice.pack()
+button_coffe.pack()
+button_tea.pack()
+
+submit_button = Button(root, text="Submit")
+submit_button.pack()
+root.mainloop()

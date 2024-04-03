@@ -1,50 +1,38 @@
-from tkinter import *
-from tkinter import messagebox
+import tkinter as tk
 
-root= Tk()
-root.title('Ardaciti Coffe Shop')
+def submit():
+    # Retrieve the values from the text fields
+    username = username_entry.get()
+    password = password_entry.get()
 
+    # Do something with the values (e.g., print them)
+    print("Username:", username)
+    print("Password:", password)
 
-button_voice=Button(root,text="VOICE COMMAND")
-def button_c():
-      popupwindow=Toplevel(root)
-      popupwindow.title("Coffee")
-      popupwindow.geometry("300x100")
-      alert=Label(popupwindow,text="black or white Coffee?")
-      buttonBlack=Button(popupwindow,text="Black")
-      if buttonBlack=="Black":
-          print("how many spoons of sugar do you want?,1,2,3,4")
-      else:
-          command=popupwindow.destroy
-      
+# Create the main window
+root = tk.Tk()
+root.title("Text Fields Example")
 
-      buttonWhite=Button(popupwindow,text="White",)
-      if buttonWhite== "White":
-             print("how many spoons of sugar do you want?,1,2,3,4")
-      else:
-          command=popupwindow.destroy
-      alert.pack()
-      buttonBlack.pack()
-      buttonWhite.pack()    
+# Create and place a label for Username
+username_label = tk.Label(root, text="Username:")
+username_label.grid(row=0, column=0, padx=5, pady=5)
 
-button_coffe= Button(root,text="COFFEE",padx=40,pady=15, command=button_c)
+# Create and place a text field for Username
+username_entry = tk.Entry(root)
+username_entry.grid(row=0, column=1, padx=5, pady=5)
 
-def button_t():
-    popupwindow=Toplevel(root)
-    popupwindow.title("Tea")
-    popupwindow.geometry("300x100")
-    alert=Label(popupwindow,text="black or white Tea?")
-    buttonBlack=Button(popupwindow,text="Black",command=popupwindow.destroy)
-    buttonWhite=Button(popupwindow,text="White",command=popupwindow.destroy)
-    alert.pack()
-    buttonBlack.pack()
-    buttonWhite.pack()
-button_tea=Button(root,text="TEA",padx=40,pady=15 ,command=button_t)
+# Create and place a label for Password
+password_label = tk.Label(root, text="Password:")
+password_label.grid(row=1, column=0, padx=5, pady=5)
 
-button_quit=Button(root,text="Exit Shopping", command =root.quit)
-button_voice.pack()
-button_coffe.pack()
-button_tea.pack()
-button_quit.pack()
+# Create and place a text field for Password
+password_entry = tk.Entry(root, show="*")  # 'show' parameter hides the entered text (e.g., for passwords)
+password_entry.grid(row=1, column=1, padx=5, pady=5)
 
+# Create and place a button for submitting the form
+submit_button = tk.Button(root, text="Submit", command=submit)
+submit_button.grid(row=2, columnspan=2, padx=5, pady=10)
+
+# Start the GUI event loop
 root.mainloop()
+

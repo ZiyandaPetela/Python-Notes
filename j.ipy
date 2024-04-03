@@ -1,20 +1,33 @@
 import tkinter as tk
+from tkinter import messagebox
 
-def button_clicked():
-    if condition:
-        # Perform some action if the condition is true
-        print("Button clicked and condition is true.")
+def ask_sugar_or_sweetener():
+    # Ask the user if they want sugar or sweetener
+    result = messagebox.askquestion("Sugar or Sweetener", "Do you want sugar or sweetener?")
+    if result == 'yes':
+        # User wants sugar
+        print("You chose sugar.")
     else:
-        # Perform some other action if the condition is false
-        print("Button clicked and condition is false.")
+        # User wants sweetener
+        print("You chose sweetener.")
 
-# Example condition
-condition = True
-
+# Create the main window
 root = tk.Tk()
-root.title("Button with Condition Example")
+root.title("Radio Button with Popup Message")
 
-button = tk.Button(root, text="Click me", command=button_clicked)
-button.pack()
+# Create a variable to store the selected option
+option = tk.StringVar()
 
+# Define the options
+options = [
+    ("Sugar", "sugar"),
+    ("Sweetener", "sweetener")
+]
+
+# Create Radiobuttons for each option
+for text, value in options:
+    option_button = tk.Radiobutton(root, text=text, variable=option, value=value, command=ask_sugar_or_sweetener)
+    option_button.pack(anchor=tk.W)
+
+# Start the GUI event loop
 root.mainloop()
