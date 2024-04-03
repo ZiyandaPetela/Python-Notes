@@ -1,0 +1,20 @@
+import tkinter as tk
+
+def button_clicked():
+    if condition:
+        # Perform some action if the condition is true
+        print("Button clicked and condition is true.")
+    else:
+        # Perform some other action if the condition is false
+        print("Button clicked and condition is false.")
+
+# Example condition
+condition = True
+
+root = tk.Tk()
+root.title("Button with Condition Example")
+
+button = tk.Button(root, text="Click me", command=button_clicked)
+button.pack()
+
+root.mainloop()

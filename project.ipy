@@ -1,0 +1,50 @@
+from tkinter import *
+from tkinter import messagebox
+
+root= Tk()
+root.title('Ardaciti Coffe Shop')
+
+
+button_voice=Button(root,text="VOICE COMMAND")
+def button_c():
+      popupwindow=Toplevel(root)
+      popupwindow.title("Coffee")
+      popupwindow.geometry("300x100")
+      alert=Label(popupwindow,text="black or white Coffee?")
+      buttonBlack=Button(popupwindow,text="Black")
+      if buttonBlack=="Black":
+          print("how many spoons of sugar do you want?,1,2,3,4")
+      else:
+          command=popupwindow.destroy
+      
+
+      buttonWhite=Button(popupwindow,text="White",)
+      if buttonWhite== "White":
+             print("how many spoons of sugar do you want?,1,2,3,4")
+      else:
+          command=popupwindow.destroy
+      alert.pack()
+      buttonBlack.pack()
+      buttonWhite.pack()    
+
+button_coffe= Button(root,text="COFFEE",padx=40,pady=15, command=button_c)
+
+def button_t():
+    popupwindow=Toplevel(root)
+    popupwindow.title("Tea")
+    popupwindow.geometry("300x100")
+    alert=Label(popupwindow,text="black or white Tea?")
+    buttonBlack=Button(popupwindow,text="Black",command=popupwindow.destroy)
+    buttonWhite=Button(popupwindow,text="White",command=popupwindow.destroy)
+    alert.pack()
+    buttonBlack.pack()
+    buttonWhite.pack()
+button_tea=Button(root,text="TEA",padx=40,pady=15 ,command=button_t)
+
+button_quit=Button(root,text="Exit Shopping", command =root.quit)
+button_voice.pack()
+button_coffe.pack()
+button_tea.pack()
+button_quit.pack()
+
+root.mainloop()
