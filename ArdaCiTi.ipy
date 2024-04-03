@@ -1,0 +1,30 @@
+from tKinter import *
+
+root= tK()
+#LABEL widget
+myLabel1= Label(root, text = 'hello World')
+myLabel2= Label(root, text = 'My name is ziyanda')
+
+#creating grids
+myLabel1.grid(row=0, column=0)
+myLabel2.grid(row=1 , column=0)
+#showing it onto the screen
+myLabel.pack()
+
+root.mainloop()
+#creating a function for the button to do something
+
+def myClick():
+    myLabel = Label(root, text='look I have clicked')
+    myLabel.pack()
+#button
+myButton= Button(root,text='Click me', state=DISABLED, padx =50,pady=50,command=myClick,fg='blue',bg='yellow')
+myButton.pack()
+
+#input fields
+e= Entry(root, width=50, bg='blue', fg='grey')
+e.pack()
+#get gets whatever you have typedin the textbox
+#e.get()
+#placeholer
+#e.insert('enter your namea')
